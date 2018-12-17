@@ -29,6 +29,19 @@ class TestProductVariantApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_add_product_variant(self):
+        """Test case for add_product_variant
+
+        """
+        pass
+
+    def test_find_product_variant_by_id(self):
+        """Test case for find_product_variant_by_id
+
+        Find Product variant by ID  # noqa: E501
+        """
+        pass
+
     def test_find_product_variants(self):
         """Test case for find_product_variants
 

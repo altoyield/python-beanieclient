@@ -29,10 +29,23 @@ class TestSalesOrderApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_add_sales_order(self):
+        """Test case for add_sales_order
+
+        """
+        pass
+
     def test_find_sales_order(self):
         """Test case for find_sales_order
 
         All sales order  # noqa: E501
+        """
+        pass
+
+    def test_find_sales_order_by_id(self):
+        """Test case for find_sales_order_by_id
+
+        Find Sales order by ID  # noqa: E501
         """
         pass
 

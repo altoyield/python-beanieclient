@@ -29,6 +29,19 @@ class TestShippingCentreApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_add_shipping_centre(self):
+        """Test case for add_shipping_centre
+
+        """
+        pass
+
+    def test_find_shipping_centre_by_id(self):
+        """Test case for find_shipping_centre_by_id
+
+        Find Shipping centre by ID  # noqa: E501
+        """
+        pass
+
     def test_find_shipping_centres(self):
         """Test case for find_shipping_centres
 

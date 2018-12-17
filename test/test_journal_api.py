@@ -29,6 +29,19 @@ class TestJournalApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_add_journal(self):
+        """Test case for add_journal
+
+        """
+        pass
+
+    def test_find_journal_by_id(self):
+        """Test case for find_journal_by_id
+
+        Find Journal by ID  # noqa: E501
+        """
+        pass
+
     def test_find_journals(self):
         """Test case for find_journals
 

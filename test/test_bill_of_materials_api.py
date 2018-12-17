@@ -42,6 +42,13 @@ class TestBillOfMaterialsApi(unittest.TestCase):
         """
         pass
 
+    def test_find_bill_of_materials(self):
+        """Test case for find_bill_of_materials
+
+        All bill of materials  # noqa: E501
+        """
+        pass
+
 
 if __name__ == '__main__':
     unittest.main()

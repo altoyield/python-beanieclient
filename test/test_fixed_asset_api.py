@@ -29,6 +29,19 @@ class TestFixedAssetApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_add_fixed_asset(self):
+        """Test case for add_fixed_asset
+
+        """
+        pass
+
+    def test_find_fixed_asset_by_id(self):
+        """Test case for find_fixed_asset_by_id
+
+        Find Fixed asset by ID  # noqa: E501
+        """
+        pass
+
     def test_find_fixed_assets(self):
         """Test case for find_fixed_assets
 

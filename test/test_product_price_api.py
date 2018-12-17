@@ -29,6 +29,19 @@ class TestProductPriceApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_add_product_price(self):
+        """Test case for add_product_price
+
+        """
+        pass
+
+    def test_find_product_price_by_id(self):
+        """Test case for find_product_price_by_id
+
+        Find Product price by ID  # noqa: E501
+        """
+        pass
+
     def test_find_product_prices(self):
         """Test case for find_product_prices
 

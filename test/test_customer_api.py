@@ -29,6 +29,19 @@ class TestCustomerApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_add_customer(self):
+        """Test case for add_customer
+
+        """
+        pass
+
+    def test_find_customer_by_id(self):
+        """Test case for find_customer_by_id
+
+        Find Customer by ID  # noqa: E501
+        """
+        pass
+
     def test_find_customers(self):
         """Test case for find_customers
 

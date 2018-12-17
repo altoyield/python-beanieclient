@@ -29,6 +29,19 @@ class TestVatRecordApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_add_vat_record(self):
+        """Test case for add_vat_record
+
+        """
+        pass
+
+    def test_find_vat_record_by_id(self):
+        """Test case for find_vat_record_by_id
+
+        Find VAT record by ID  # noqa: E501
+        """
+        pass
+
     def test_find_vat_records(self):
         """Test case for find_vat_records
 

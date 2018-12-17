@@ -29,6 +29,19 @@ class TestAddressBlockApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_add_address_block(self):
+        """Test case for add_address_block
+
+        """
+        pass
+
+    def test_find_address_block_by_id(self):
+        """Test case for find_address_block_by_id
+
+        Find Address block by ID  # noqa: E501
+        """
+        pass
+
     def test_find_address_blocks(self):
         """Test case for find_address_blocks
 

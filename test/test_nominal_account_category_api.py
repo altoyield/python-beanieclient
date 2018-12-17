@@ -29,10 +29,23 @@ class TestNominalAccountCategoryApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_add_nominal_account_category(self):
+        """Test case for add_nominal_account_category
+
+        """
+        pass
+
     def test_find_nominal_account_categories(self):
         """Test case for find_nominal_account_categories
 
         All nominal account category  # noqa: E501
+        """
+        pass
+
+    def test_find_nominal_account_category_by_id(self):
+        """Test case for find_nominal_account_category_by_id
+
+        Find Nominal account category by ID  # noqa: E501
         """
         pass
 

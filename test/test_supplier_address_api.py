@@ -29,6 +29,19 @@ class TestSupplierAddressApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_add_supplier_address(self):
+        """Test case for add_supplier_address
+
+        """
+        pass
+
+    def test_find_supplier_address_by_id(self):
+        """Test case for find_supplier_address_by_id
+
+        Find Supplier address by ID  # noqa: E501
+        """
+        pass
+
     def test_find_supplier_addresses(self):
         """Test case for find_supplier_addresses
 

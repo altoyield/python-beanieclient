@@ -29,10 +29,23 @@ class TestStockCategoryApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_add_stock_category(self):
+        """Test case for add_stock_category
+
+        """
+        pass
+
     def test_find_stock_categories(self):
         """Test case for find_stock_categories
 
         All stock category  # noqa: E501
+        """
+        pass
+
+    def test_find_stock_category_by_id(self):
+        """Test case for find_stock_category_by_id
+
+        Find Stock category by ID  # noqa: E501
         """
         pass
 

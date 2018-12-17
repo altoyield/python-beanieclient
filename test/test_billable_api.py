@@ -29,6 +29,19 @@ class TestBillableApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_add_billable(self):
+        """Test case for add_billable
+
+        """
+        pass
+
+    def test_find_billable_by_id(self):
+        """Test case for find_billable_by_id
+
+        Find Billable record by ID  # noqa: E501
+        """
+        pass
+
     def test_find_billables(self):
         """Test case for find_billables
 

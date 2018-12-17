@@ -29,6 +29,19 @@ class TestBeanieTaskApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_add_beanie_task(self):
+        """Test case for add_beanie_task
+
+        """
+        pass
+
+    def test_find_beanie_task_by_id(self):
+        """Test case for find_beanie_task_by_id
+
+        Find Beanie task by ID  # noqa: E501
+        """
+        pass
+
     def test_find_beanie_tasks(self):
         """Test case for find_beanie_tasks
 

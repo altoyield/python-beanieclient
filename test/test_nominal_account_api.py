@@ -29,6 +29,19 @@ class TestNominalAccountApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_add_nominal_account(self):
+        """Test case for add_nominal_account
+
+        """
+        pass
+
+    def test_find_nominal_account_by_id(self):
+        """Test case for find_nominal_account_by_id
+
+        Find Nominal account by ID  # noqa: E501
+        """
+        pass
+
     def test_find_nominal_accounts(self):
         """Test case for find_nominal_accounts
 

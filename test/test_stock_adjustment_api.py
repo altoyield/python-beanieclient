@@ -29,6 +29,19 @@ class TestStockAdjustmentApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_add_stock_adjustment(self):
+        """Test case for add_stock_adjustment
+
+        """
+        pass
+
+    def test_find_stock_adjustment_by_id(self):
+        """Test case for find_stock_adjustment_by_id
+
+        Find Stock adjustment by ID  # noqa: E501
+        """
+        pass
+
     def test_find_stock_adjustments(self):
         """Test case for find_stock_adjustments
 

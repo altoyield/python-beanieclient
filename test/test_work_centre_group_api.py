@@ -29,6 +29,19 @@ class TestWorkCentreGroupApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_add_work_centre_group(self):
+        """Test case for add_work_centre_group
+
+        """
+        pass
+
+    def test_find_work_centre_group_by_id(self):
+        """Test case for find_work_centre_group_by_id
+
+        Find Work centre group by ID  # noqa: E501
+        """
+        pass
+
     def test_find_work_centre_groups(self):
         """Test case for find_work_centre_groups
 

@@ -29,6 +29,19 @@ class TestPurchaseOrderApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_add_purchase_order(self):
+        """Test case for add_purchase_order
+
+        """
+        pass
+
+    def test_find_purchase_order_by_id(self):
+        """Test case for find_purchase_order_by_id
+
+        Find Purchase order by ID  # noqa: E501
+        """
+        pass
+
     def test_find_purchase_orders(self):
         """Test case for find_purchase_orders
 

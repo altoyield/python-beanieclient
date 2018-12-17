@@ -29,6 +29,19 @@ class TestPurchaseInvoiceApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_add_purchase_invoice(self):
+        """Test case for add_purchase_invoice
+
+        """
+        pass
+
+    def test_find_purchase_invoice_by_id(self):
+        """Test case for find_purchase_invoice_by_id
+
+        Find Purchase invoice by ID  # noqa: E501
+        """
+        pass
+
     def test_find_purchase_invoices(self):
         """Test case for find_purchase_invoices
 

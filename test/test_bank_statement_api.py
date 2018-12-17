@@ -29,6 +29,19 @@ class TestBankStatementApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_add_bank_statement(self):
+        """Test case for add_bank_statement
+
+        """
+        pass
+
+    def test_find_bank_statement_by_id(self):
+        """Test case for find_bank_statement_by_id
+
+        Find Bank statement by ID  # noqa: E501
+        """
+        pass
+
     def test_find_bank_statements(self):
         """Test case for find_bank_statements
 

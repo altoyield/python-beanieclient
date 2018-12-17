@@ -29,6 +29,19 @@ class TestDeliveryNoteApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_add_delivery_note(self):
+        """Test case for add_delivery_note
+
+        """
+        pass
+
+    def test_find_delivery_note_by_id(self):
+        """Test case for find_delivery_note_by_id
+
+        Find Delivery note by ID  # noqa: E501
+        """
+        pass
+
     def test_find_delivery_notes(self):
         """Test case for find_delivery_notes
 

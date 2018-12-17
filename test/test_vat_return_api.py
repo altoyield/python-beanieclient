@@ -29,6 +29,19 @@ class TestVatReturnApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_add_vat_return(self):
+        """Test case for add_vat_return
+
+        """
+        pass
+
+    def test_find_vat_return_by_id(self):
+        """Test case for find_vat_return_by_id
+
+        Find VAT return by ID  # noqa: E501
+        """
+        pass
+
     def test_find_vat_returns(self):
         """Test case for find_vat_returns
 

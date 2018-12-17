@@ -29,6 +29,19 @@ class TestDocumentApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_add_document(self):
+        """Test case for add_document
+
+        """
+        pass
+
+    def test_find_document_by_id(self):
+        """Test case for find_document_by_id
+
+        Find Document by ID  # noqa: E501
+        """
+        pass
+
     def test_find_documents(self):
         """Test case for find_documents
 

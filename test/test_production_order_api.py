@@ -29,6 +29,19 @@ class TestProductionOrderApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_add_production_order(self):
+        """Test case for add_production_order
+
+        """
+        pass
+
+    def test_find_production_order_by_id(self):
+        """Test case for find_production_order_by_id
+
+        Find Production order by ID  # noqa: E501
+        """
+        pass
+
     def test_find_production_orders(self):
         """Test case for find_production_orders
 
