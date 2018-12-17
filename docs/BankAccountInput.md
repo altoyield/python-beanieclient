@@ -3,10 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **int** |  | 
 **name** | **str** |  | 
 **bank_name** | **str** |  | 
-**currency** | **str** |  | 
+**currency_code** | **str** |  | 
 **swift** | **str** |  | 
 **iban** | **str** |  | 
 **address1** | **str** |  | [optional] 
@@ -15,7 +14,7 @@ Name | Type | Description | Notes
 **city** | **str** |  | [optional] 
 **state_county** | **str** |  | [optional] 
 **zip_postcode** | **str** |  | [optional] 
-**country** | **str** |  | [optional] 
+**country_name** | **str** |  | 
 **contact_name** | **str** |  | [optional] 
 **phone** | **str** |  | [optional] 
 **email** | **str** |  | [optional] 

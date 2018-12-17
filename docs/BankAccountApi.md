@@ -24,8 +24,14 @@ import beanie
 from beanie.rest import ApiException
 from pprint import pprint
 
+# Configure API key authorization: api_key
+configuration = beanie.Configuration()
+configuration.api_key['ApiKey'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['ApiKey'] = 'Bearer'
+
 # create an instance of the API class
-api_instance = beanie.BankAccountApi()
+api_instance = beanie.BankAccountApi(beanie.ApiClient(configuration))
 bank_account = beanie.BankAccountInput() # BankAccountInput | Bank account to add to the system
 
 try:
@@ -47,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key](../README.md#api_key)
 
 ### HTTP request headers
 
@@ -71,8 +77,14 @@ import beanie
 from beanie.rest import ApiException
 from pprint import pprint
 
+# Configure API key authorization: api_key
+configuration = beanie.Configuration()
+configuration.api_key['ApiKey'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['ApiKey'] = 'Bearer'
+
 # create an instance of the API class
-api_instance = beanie.BankAccountApi()
+api_instance = beanie.BankAccountApi(beanie.ApiClient(configuration))
 id = 789 # int | ID of bank account to fetch
 
 try:
@@ -95,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key](../README.md#api_key)
 
 ### HTTP request headers
 
@@ -119,8 +131,14 @@ import beanie
 from beanie.rest import ApiException
 from pprint import pprint
 
+# Configure API key authorization: api_key
+configuration = beanie.Configuration()
+configuration.api_key['ApiKey'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['ApiKey'] = 'Bearer'
+
 # create an instance of the API class
-api_instance = beanie.BankAccountApi()
+api_instance = beanie.BankAccountApi(beanie.ApiClient(configuration))
 tags = ['tags_example'] # list[str] | tags to filter by (optional)
 limit = 56 # int | maximum number of results to return (optional)
 
@@ -145,7 +163,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[api_key](../README.md#api_key)
 
 ### HTTP request headers
 
