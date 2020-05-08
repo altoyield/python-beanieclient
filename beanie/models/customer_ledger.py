@@ -31,43 +31,203 @@ class CustomerLedger(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'int'
+        '_date': 'date',
+        'ledger_type': 'str',
+        'narrative': 'str',
+        'amount': 'float',
+        'reconciled': 'bool',
+        'journal_id': 'int',
+        'sales_invoice_id': 'int'
     }
 
     attribute_map = {
-        'id': 'id'
+        '_date': 'date',
+        'ledger_type': 'ledger_type',
+        'narrative': 'narrative',
+        'amount': 'amount',
+        'reconciled': 'reconciled',
+        'journal_id': 'journal_id',
+        'sales_invoice_id': 'sales_invoice_id'
     }
 
-    def __init__(self, id=None):  # noqa: E501
+    def __init__(self, _date=None, ledger_type=None, narrative=None, amount=None, reconciled=None, journal_id=None, sales_invoice_id=None):  # noqa: E501
         """CustomerLedger - a model defined in Swagger"""  # noqa: E501
 
-        self._id = None
+        self.__date = None
+        self._ledger_type = None
+        self._narrative = None
+        self._amount = None
+        self._reconciled = None
+        self._journal_id = None
+        self._sales_invoice_id = None
         self.discriminator = None
 
-        self.id = id
+        self._date = _date
+        self.ledger_type = ledger_type
+        self.narrative = narrative
+        self.amount = amount
+        self.reconciled = reconciled
+        if journal_id is not None:
+            self.journal_id = journal_id
+        if sales_invoice_id is not None:
+            self.sales_invoice_id = sales_invoice_id
 
     @property
-    def id(self):
-        """Gets the id of this CustomerLedger.  # noqa: E501
+    def _date(self):
+        """Gets the _date of this CustomerLedger.  # noqa: E501
 
 
-        :return: The id of this CustomerLedger.  # noqa: E501
+        :return: The _date of this CustomerLedger.  # noqa: E501
+        :rtype: date
+        """
+        return self.__date
+
+    @_date.setter
+    def _date(self, _date):
+        """Sets the _date of this CustomerLedger.
+
+
+        :param _date: The _date of this CustomerLedger.  # noqa: E501
+        :type: date
+        """
+        if _date is None:
+            raise ValueError("Invalid value for `_date`, must not be `None`")  # noqa: E501
+
+        self.__date = _date
+
+    @property
+    def ledger_type(self):
+        """Gets the ledger_type of this CustomerLedger.  # noqa: E501
+
+
+        :return: The ledger_type of this CustomerLedger.  # noqa: E501
+        :rtype: str
+        """
+        return self._ledger_type
+
+    @ledger_type.setter
+    def ledger_type(self, ledger_type):
+        """Sets the ledger_type of this CustomerLedger.
+
+
+        :param ledger_type: The ledger_type of this CustomerLedger.  # noqa: E501
+        :type: str
+        """
+        if ledger_type is None:
+            raise ValueError("Invalid value for `ledger_type`, must not be `None`")  # noqa: E501
+
+        self._ledger_type = ledger_type
+
+    @property
+    def narrative(self):
+        """Gets the narrative of this CustomerLedger.  # noqa: E501
+
+
+        :return: The narrative of this CustomerLedger.  # noqa: E501
+        :rtype: str
+        """
+        return self._narrative
+
+    @narrative.setter
+    def narrative(self, narrative):
+        """Sets the narrative of this CustomerLedger.
+
+
+        :param narrative: The narrative of this CustomerLedger.  # noqa: E501
+        :type: str
+        """
+        if narrative is None:
+            raise ValueError("Invalid value for `narrative`, must not be `None`")  # noqa: E501
+
+        self._narrative = narrative
+
+    @property
+    def amount(self):
+        """Gets the amount of this CustomerLedger.  # noqa: E501
+
+
+        :return: The amount of this CustomerLedger.  # noqa: E501
+        :rtype: float
+        """
+        return self._amount
+
+    @amount.setter
+    def amount(self, amount):
+        """Sets the amount of this CustomerLedger.
+
+
+        :param amount: The amount of this CustomerLedger.  # noqa: E501
+        :type: float
+        """
+        if amount is None:
+            raise ValueError("Invalid value for `amount`, must not be `None`")  # noqa: E501
+
+        self._amount = amount
+
+    @property
+    def reconciled(self):
+        """Gets the reconciled of this CustomerLedger.  # noqa: E501
+
+
+        :return: The reconciled of this CustomerLedger.  # noqa: E501
+        :rtype: bool
+        """
+        return self._reconciled
+
+    @reconciled.setter
+    def reconciled(self, reconciled):
+        """Sets the reconciled of this CustomerLedger.
+
+
+        :param reconciled: The reconciled of this CustomerLedger.  # noqa: E501
+        :type: bool
+        """
+        if reconciled is None:
+            raise ValueError("Invalid value for `reconciled`, must not be `None`")  # noqa: E501
+
+        self._reconciled = reconciled
+
+    @property
+    def journal_id(self):
+        """Gets the journal_id of this CustomerLedger.  # noqa: E501
+
+
+        :return: The journal_id of this CustomerLedger.  # noqa: E501
         :rtype: int
         """
-        return self._id
+        return self._journal_id
 
-    @id.setter
-    def id(self, id):
-        """Sets the id of this CustomerLedger.
+    @journal_id.setter
+    def journal_id(self, journal_id):
+        """Sets the journal_id of this CustomerLedger.
 
 
-        :param id: The id of this CustomerLedger.  # noqa: E501
+        :param journal_id: The journal_id of this CustomerLedger.  # noqa: E501
         :type: int
         """
-        if id is None:
-            raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
 
-        self._id = id
+        self._journal_id = journal_id
+
+    @property
+    def sales_invoice_id(self):
+        """Gets the sales_invoice_id of this CustomerLedger.  # noqa: E501
+
+
+        :return: The sales_invoice_id of this CustomerLedger.  # noqa: E501
+        :rtype: int
+        """
+        return self._sales_invoice_id
+
+    @sales_invoice_id.setter
+    def sales_invoice_id(self, sales_invoice_id):
+        """Sets the sales_invoice_id of this CustomerLedger.
+
+
+        :param sales_invoice_id: The sales_invoice_id of this CustomerLedger.  # noqa: E501
+        :type: int
+        """
+
+        self._sales_invoice_id = sales_invoice_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

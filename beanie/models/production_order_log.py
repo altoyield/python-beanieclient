@@ -31,43 +31,97 @@ class ProductionOrderLog(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'int'
+        '_date': 'datetime',
+        'member': 'str',
+        'message': 'str'
     }
 
     attribute_map = {
-        'id': 'id'
+        '_date': 'date',
+        'member': 'member',
+        'message': 'message'
     }
 
-    def __init__(self, id=None):  # noqa: E501
+    def __init__(self, _date=None, member=None, message=None):  # noqa: E501
         """ProductionOrderLog - a model defined in Swagger"""  # noqa: E501
 
-        self._id = None
+        self.__date = None
+        self._member = None
+        self._message = None
         self.discriminator = None
 
-        self.id = id
+        self._date = _date
+        self.member = member
+        self.message = message
 
     @property
-    def id(self):
-        """Gets the id of this ProductionOrderLog.  # noqa: E501
+    def _date(self):
+        """Gets the _date of this ProductionOrderLog.  # noqa: E501
 
 
-        :return: The id of this ProductionOrderLog.  # noqa: E501
-        :rtype: int
+        :return: The _date of this ProductionOrderLog.  # noqa: E501
+        :rtype: datetime
         """
-        return self._id
+        return self.__date
 
-    @id.setter
-    def id(self, id):
-        """Sets the id of this ProductionOrderLog.
+    @_date.setter
+    def _date(self, _date):
+        """Sets the _date of this ProductionOrderLog.
 
 
-        :param id: The id of this ProductionOrderLog.  # noqa: E501
-        :type: int
+        :param _date: The _date of this ProductionOrderLog.  # noqa: E501
+        :type: datetime
         """
-        if id is None:
-            raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
+        if _date is None:
+            raise ValueError("Invalid value for `_date`, must not be `None`")  # noqa: E501
 
-        self._id = id
+        self.__date = _date
+
+    @property
+    def member(self):
+        """Gets the member of this ProductionOrderLog.  # noqa: E501
+
+
+        :return: The member of this ProductionOrderLog.  # noqa: E501
+        :rtype: str
+        """
+        return self._member
+
+    @member.setter
+    def member(self, member):
+        """Sets the member of this ProductionOrderLog.
+
+
+        :param member: The member of this ProductionOrderLog.  # noqa: E501
+        :type: str
+        """
+        if member is None:
+            raise ValueError("Invalid value for `member`, must not be `None`")  # noqa: E501
+
+        self._member = member
+
+    @property
+    def message(self):
+        """Gets the message of this ProductionOrderLog.  # noqa: E501
+
+
+        :return: The message of this ProductionOrderLog.  # noqa: E501
+        :rtype: str
+        """
+        return self._message
+
+    @message.setter
+    def message(self, message):
+        """Sets the message of this ProductionOrderLog.
+
+
+        :param message: The message of this ProductionOrderLog.  # noqa: E501
+        :type: str
+        """
+        if message is None:
+            raise ValueError("Invalid value for `message`, must not be `None`")  # noqa: E501
+
+        self._message = message
 
     def to_dict(self):
         """Returns the model properties as a dict"""

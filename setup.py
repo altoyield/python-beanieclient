@@ -14,7 +14,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "beanie-api"
-VERSION = "0.2.2"
+VERSION = "0.8.1"
 # To install the library, run the following
 #
 # python setup.py install

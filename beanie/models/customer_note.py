@@ -31,43 +31,97 @@ class CustomerNote(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'int'
+        '_date': 'datetime',
+        'author': 'str',
+        'note': 'str'
     }
 
     attribute_map = {
-        'id': 'id'
+        '_date': 'date',
+        'author': 'author',
+        'note': 'note'
     }
 
-    def __init__(self, id=None):  # noqa: E501
+    def __init__(self, _date=None, author=None, note=None):  # noqa: E501
         """CustomerNote - a model defined in Swagger"""  # noqa: E501
 
-        self._id = None
+        self.__date = None
+        self._author = None
+        self._note = None
         self.discriminator = None
 
-        self.id = id
+        self._date = _date
+        self.author = author
+        self.note = note
 
     @property
-    def id(self):
-        """Gets the id of this CustomerNote.  # noqa: E501
+    def _date(self):
+        """Gets the _date of this CustomerNote.  # noqa: E501
 
 
-        :return: The id of this CustomerNote.  # noqa: E501
-        :rtype: int
+        :return: The _date of this CustomerNote.  # noqa: E501
+        :rtype: datetime
         """
-        return self._id
+        return self.__date
 
-    @id.setter
-    def id(self, id):
-        """Sets the id of this CustomerNote.
+    @_date.setter
+    def _date(self, _date):
+        """Sets the _date of this CustomerNote.
 
 
-        :param id: The id of this CustomerNote.  # noqa: E501
-        :type: int
+        :param _date: The _date of this CustomerNote.  # noqa: E501
+        :type: datetime
         """
-        if id is None:
-            raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
+        if _date is None:
+            raise ValueError("Invalid value for `_date`, must not be `None`")  # noqa: E501
 
-        self._id = id
+        self.__date = _date
+
+    @property
+    def author(self):
+        """Gets the author of this CustomerNote.  # noqa: E501
+
+
+        :return: The author of this CustomerNote.  # noqa: E501
+        :rtype: str
+        """
+        return self._author
+
+    @author.setter
+    def author(self, author):
+        """Sets the author of this CustomerNote.
+
+
+        :param author: The author of this CustomerNote.  # noqa: E501
+        :type: str
+        """
+        if author is None:
+            raise ValueError("Invalid value for `author`, must not be `None`")  # noqa: E501
+
+        self._author = author
+
+    @property
+    def note(self):
+        """Gets the note of this CustomerNote.  # noqa: E501
+
+
+        :return: The note of this CustomerNote.  # noqa: E501
+        :rtype: str
+        """
+        return self._note
+
+    @note.setter
+    def note(self, note):
+        """Sets the note of this CustomerNote.
+
+
+        :param note: The note of this CustomerNote.  # noqa: E501
+        :type: str
+        """
+        if note is None:
+            raise ValueError("Invalid value for `note`, must not be `None`")  # noqa: E501
+
+        self._note = note
 
     def to_dict(self):
         """Returns the model properties as a dict"""

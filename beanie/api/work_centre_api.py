@@ -33,105 +33,6 @@ class WorkCentreApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def add_work_centre(self, work_centres, **kwargs):  # noqa: E501
-        """add_work_centre  # noqa: E501
-
-        Creates a new work centre in the system  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.add_work_centre(work_centres, async=True)
-        >>> result = thread.get()
-
-        :param async bool
-        :param WorkCentreInput work_centres: Work centre to add to the system (required)
-        :return: WorkCentre
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
-            return self.add_work_centre_with_http_info(work_centres, **kwargs)  # noqa: E501
-        else:
-            (data) = self.add_work_centre_with_http_info(work_centres, **kwargs)  # noqa: E501
-            return data
-
-    def add_work_centre_with_http_info(self, work_centres, **kwargs):  # noqa: E501
-        """add_work_centre  # noqa: E501
-
-        Creates a new work centre in the system  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.add_work_centre_with_http_info(work_centres, async=True)
-        >>> result = thread.get()
-
-        :param async bool
-        :param WorkCentreInput work_centres: Work centre to add to the system (required)
-        :return: WorkCentre
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['work_centres']  # noqa: E501
-        all_params.append('async')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method add_work_centre" % key
-                )
-            params[key] = val
-        del params['kwargs']
-        # verify the required parameter 'work_centres' is set
-        if ('work_centres' not in params or
-                params['work_centres'] is None):
-            raise ValueError("Missing the required parameter `work_centres` when calling `add_work_centre`")  # noqa: E501
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        if 'work_centres' in params:
-            body_params = params['work_centres']
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
-            ['application/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['api_key']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/work_centres', 'POST',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='WorkCentre',  # noqa: E501
-            auth_settings=auth_settings,
-            async=params.get('async'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
     def find_work_centre_by_id(self, id, **kwargs):  # noqa: E501
         """Find Work centre by ID  # noqa: E501
 
@@ -231,16 +132,17 @@ class WorkCentreApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def find_work_centres(self, **kwargs):  # noqa: E501
+    def find_work_centres(self, work_centre_group_id, **kwargs):  # noqa: E501
         """All work centre  # noqa: E501
 
         Returns all work centre from the system that the user has access to  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async=True
-        >>> thread = api.find_work_centres(async=True)
+        >>> thread = api.find_work_centres(work_centre_group_id, async=True)
         >>> result = thread.get()
 
         :param async bool
+        :param int work_centre_group_id: ID of Work Centre Group for list of Work Centres (required)
         :param list[str] tags: tags to filter by
         :param int limit: Maximum number of results to return
         :return: list[WorkCentre]
@@ -249,21 +151,22 @@ class WorkCentreApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async'):
-            return self.find_work_centres_with_http_info(**kwargs)  # noqa: E501
+            return self.find_work_centres_with_http_info(work_centre_group_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.find_work_centres_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.find_work_centres_with_http_info(work_centre_group_id, **kwargs)  # noqa: E501
             return data
 
-    def find_work_centres_with_http_info(self, **kwargs):  # noqa: E501
+    def find_work_centres_with_http_info(self, work_centre_group_id, **kwargs):  # noqa: E501
         """All work centre  # noqa: E501
 
         Returns all work centre from the system that the user has access to  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async=True
-        >>> thread = api.find_work_centres_with_http_info(async=True)
+        >>> thread = api.find_work_centres_with_http_info(work_centre_group_id, async=True)
         >>> result = thread.get()
 
         :param async bool
+        :param int work_centre_group_id: ID of Work Centre Group for list of Work Centres (required)
         :param list[str] tags: tags to filter by
         :param int limit: Maximum number of results to return
         :return: list[WorkCentre]
@@ -271,7 +174,7 @@ class WorkCentreApi(object):
                  returns the request thread.
         """
 
-        all_params = ['tags', 'limit']  # noqa: E501
+        all_params = ['work_centre_group_id', 'tags', 'limit']  # noqa: E501
         all_params.append('async')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -286,10 +189,16 @@ class WorkCentreApi(object):
                 )
             params[key] = val
         del params['kwargs']
+        # verify the required parameter 'work_centre_group_id' is set
+        if ('work_centre_group_id' not in params or
+                params['work_centre_group_id'] is None):
+            raise ValueError("Missing the required parameter `work_centre_group_id` when calling `find_work_centres`")  # noqa: E501
 
         collection_formats = {}
 
         path_params = {}
+        if 'work_centre_group_id' in params:
+            path_params['work_centre_group_id'] = params['work_centre_group_id']  # noqa: E501
 
         query_params = []
         if 'tags' in params:
@@ -316,7 +225,7 @@ class WorkCentreApi(object):
         auth_settings = ['api_key']  # noqa: E501
 
         return self.api_client.call_api(
-            '/work_centres', 'GET',
+            '/work_centre_groups/{work_centre_group_id}/work_centres', 'GET',
             path_params,
             query_params,
             header_params,
